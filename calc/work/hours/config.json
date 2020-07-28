@@ -1,0 +1,46 @@
+{
+  "dockerImageBuilder": "cimg/go:1.14",
+  "inputs": [
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new value. ",
+        "qty": 6
+      },
+      "label": "Start to work: (hh:mm) ",
+      "name": "START_WORK",
+      "type": "text"
+    },
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new value. ",
+        "qty": 6
+      },
+      "label": "Start to lunch: (hh:mm) ",
+      "name": "START_LUNCH",
+      "type": "text"
+    },
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new value. ",
+        "qty": 6
+      },
+      "label": "End to lunch: (hh:mm) ",
+      "name": "END_LUNCH",
+      "type": "text"
+    },
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new value. ",
+        "qty": 6
+      },
+      "label": "End to work: (hh:mm)[optional]",
+      "default": "-",
+      "name": "END_WORK",
+      "type": "text"
+    }
+  ]
+}

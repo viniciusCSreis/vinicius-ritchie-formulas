@@ -1,0 +1,4 @@
+{
+	"short": "calc the time that u work",
+	"long":  "calc work hours is a formula that you pass: \n - the time that you start work. \n - the start lunch time. \n - the end lunch time. \n - the end of work\n and the formula return the time that you work."
+}
