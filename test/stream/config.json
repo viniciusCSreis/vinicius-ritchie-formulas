@@ -37,6 +37,16 @@
       "label": "Tell us a secret: ",
       "name": "input_password",
       "type": "password"
+    },
+    {
+      "label": "Stream Repeat",
+      "name": "input_repeat",
+      "type": "text"
+    },
+    {
+      "label": "Stream Repeat timeout (seconds)",
+      "name": "input_repeat_timeout",
+      "type": "text"
     }
   ]
 }

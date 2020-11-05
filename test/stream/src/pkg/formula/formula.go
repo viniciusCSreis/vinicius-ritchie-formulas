@@ -17,6 +17,7 @@ type Formula struct {
 	Boolean  bool
 	Password string
 	Sleep time.Duration
+	Repeat int
 }
 
 func (f Formula) Run(writer io.Writer) {
@@ -36,7 +37,7 @@ func (f Formula) Run(writer io.Writer) {
 
 	result += color.FgCyan.Render(fmt.Sprintf("My secret is %s.\n", f.Password))
 
-	for i := 0 ; i< 20 ;i++ {
+	for i := 0 ; i< f.Repeat ;i++ {
 		result += color.FgGreen.Render(fmt.Sprintf("Stream number %d.\n", i))
 		if _, err := fmt.Fprintf(writer, result); err != nil {
 			panic(err)
