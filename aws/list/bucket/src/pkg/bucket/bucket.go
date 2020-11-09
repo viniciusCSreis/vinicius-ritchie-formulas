@@ -15,6 +15,7 @@ type Inputs struct {
 	Key    string
 	Secret string
 	Region string
+	Token  string
 }
 
 func (in Inputs) Run() {
@@ -24,7 +25,7 @@ func (in Inputs) Run() {
 	}
 	sess, err := session.NewSession(&aws.Config{
 		Region:      aws.String(in.Region),
-		Credentials: credentials.NewStaticCredentials(in.Key, in.Secret, ""),
+		Credentials: credentials.NewStaticCredentials(in.Key, in.Secret, in.Token),
 	})
 	if err != nil {
 		fmt.Println("Failed to create session, verify credentials")
