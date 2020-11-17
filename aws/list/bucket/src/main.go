@@ -14,5 +14,6 @@ func loadInputs() bucket.Inputs {
 		Key:    os.Getenv("ACCESS_KEY"),
 		Secret: os.Getenv("SECRET_ACCESS_KEY"),
 		Region: os.Getenv("REGION"),
+		Token: os.Getenv("SESSION_TOKEN"),
 	}
 }
